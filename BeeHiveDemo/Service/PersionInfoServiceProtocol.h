@@ -16,4 +16,6 @@
 /** PersionInfoModel */
 @property (strong, nonatomic) PersionInfoModel *persionInfoModel;
 
+- (void)persionTest;
+
 @end

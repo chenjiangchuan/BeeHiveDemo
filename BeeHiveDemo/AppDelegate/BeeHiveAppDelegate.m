@@ -32,7 +32,6 @@
     
     [super application:application didFinishLaunchingWithOptions:launchOptions];
     
-    // 生产Service
     id <TabBarServiceProtocol> tabBarVc = [[BeeHive shareInstance] createService:@protocol(TabBarServiceProtocol)];
     
     if ([tabBarVc isKindOfClass:[UIViewController class]]) {

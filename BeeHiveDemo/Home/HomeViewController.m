@@ -53,13 +53,13 @@ BeeHiveService(HomeServiceProtocol, HomeViewController)
 
 - (void)layoutPageSubviews {
     
-    CGFloat x = [UIScreen mainScreen].bounds.size.width * 0.5;
+    CGFloat x = [UIScreen mainScreen].bounds.size.width * 0.4;
     CGFloat y = [UIScreen mainScreen].bounds.size.height * 0.5;
     CGFloat width = 100;
     CGFloat heigh = 20;
     
     self.label.frame = CGRectMake(x, y, width, heigh);
-    self.button.frame = CGRectMake(x, y+20, width, heigh);
+    self.button.frame = CGRectMake(x, y+50, width, heigh);
 
     self.label.text = self.itemId;
     [self.label sizeToFit];
@@ -75,6 +75,7 @@ BeeHiveService(HomeServiceProtocol, HomeViewController)
         model.name = @"cjc";
         model.age = 27;
         persionInfoVc.persionInfoModel = model;
+        [persionInfoVc persionTest];
         [self.navigationController pushViewController:(UIViewController *)persionInfoVc animated:YES];
     }
 }
